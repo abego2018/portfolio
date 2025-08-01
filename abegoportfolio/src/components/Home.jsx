@@ -1,10 +1,17 @@
 import React from "react";
 import { Grid, Paper } from "@mui/material";
 import Hello from "./Hello";
+import AboutMe from "./AboutMe";
 
 function Home() {
   return (
-    <Grid container direction="column" spacing={2} style={{ height: "100vh" }}>
+    <Grid
+      container
+      wrap="nowrap"
+      direction="column"
+      spacing={2}
+      style={{ height: "100vh" }}
+    >
       {/* Welcome */}
       <Grid id="welcome" item xs={12} sx={{ minHeight: "300px" }}>
         <Paper style={{ padding: 20 }}>
@@ -15,8 +22,7 @@ function Home() {
       {/* About me*/}
       <Grid id="aboutme" item xs={12}>
         <Paper style={{ padding: 20 }}>
-          TODO add About section here, include a linkable nave system for Life,
-          Education, Experience
+          <AboutMe />
         </Paper>
       </Grid>
 

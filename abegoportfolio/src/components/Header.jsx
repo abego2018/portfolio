@@ -10,13 +10,15 @@ import {
   ListItemText,
 } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Logo from "../assets/images/Logo.png";
+import "./styles.css";
 function Header() {
   return (
     <Box display="flex" justifyContent="space-between" alignItems="center">
       {/* Left List */}
       <List sx={{ display: "flex", gap: 2, padding: 0 }}>
         <Typography variant="h6" sx={{ mr: 2, alignSelf: "center" }}>
-          Logo
+          <img id="Logo" src={Logo} />
         </Typography>
         <ListItem
           button

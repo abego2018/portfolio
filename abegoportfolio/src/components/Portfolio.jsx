@@ -8,7 +8,7 @@ function Portfolio() {
         sx={{
           height: "100%",
           display: "flex",
-          justifyContent: "center", // horizontal center
+          justifyContent: "center",
         }}
       >
         <Typography variant="subtitle2">Portfolio</Typography>

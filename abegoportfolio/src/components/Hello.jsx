@@ -10,7 +10,15 @@ function Hello() {
         <Grid item xs={12} sm={6}>
           {" "}
           {/* Takes full width on extra-small, half on small and up */}
-          <Box sx={{ p: 2, border: "1px solid grey", borderRadius: 2 }}>
+          <Box
+            sx={{
+              p: 2,
+              border: "1px solid grey",
+              borderRadius: 2,
+              minWidth: "300px",
+              minHeight: "300px",
+            }}
+          >
             <p>Hello</p>
             <h2>I am Abego</h2>
             <p>Abraham Gonzalez</p>
@@ -24,7 +32,7 @@ function Hello() {
               p: 2,
               border: "1px solid grey",
               borderRadius: 2,
-              minHeight: "300px",
+              maxHeight: "300px",
             }}
           >
             <img src="https://placehold.co/300x300?text=profilepic" />

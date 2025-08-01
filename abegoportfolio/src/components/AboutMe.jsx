@@ -1,6 +1,6 @@
 // AboutMe.jsx
 import React, { useState } from "react";
-import { Container, Box, Grid, Typography } from "@mui/material";
+import { Container, Box, Grid, Typography, Button } from "@mui/material";
 import AboutMeNavBox from "./AboutMeNavBox";
 
 const aboutItems = [
@@ -44,6 +44,7 @@ function AboutMe() {
               justifyContent: "center",
               borderRadius: 2,
               bgcolor: "#f9f9f9",
+              maxHeight: "350px",
             }}
           >
             {activeItem ? (
@@ -56,6 +57,7 @@ function AboutMe() {
                   maxWidth: "100%",
                   borderRadius: 2,
                   boxShadow: 3,
+                  maxHeight: "350px",
                 }}
               />
             ) : (
@@ -68,13 +70,15 @@ function AboutMe() {
 
         {/* Right: Nav + Description */}
         <Grid item xs={12} sm={6}>
+          <Typography variant="subtitle1">A little</Typography>
+          <Typography variant="h4">About Me</Typography>
           <Box
             sx={{
               p: 2,
               border: "1px solid grey",
               borderRadius: 2,
-              minHeight: "400px",
-              maxWidth: "400px",
+              maxHeight: "350px",
+              maxWidth: "300px",
             }}
           >
             <AboutMeNavBox
@@ -82,6 +86,7 @@ function AboutMe() {
               setSelectedKey={setSelectedKey}
               items={aboutItems}
             />
+            <Button>Download Resume</Button>
           </Box>
         </Grid>
       </Grid>

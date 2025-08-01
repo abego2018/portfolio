@@ -34,7 +34,14 @@ function Header() {
         >
           Portfolio
         </ListItem>
-        <ListItem sx={{ width: "auto", padding: 0 }}>Contact</ListItem>
+        <ListItem
+          button
+          component="a"
+          href="#contact"
+          sx={{ width: "auto", padding: 0 }}
+        >
+          Contact
+        </ListItem>
       </List>
 
       {/* Right List */}

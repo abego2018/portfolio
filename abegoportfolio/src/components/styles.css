@@ -6,3 +6,18 @@
   --crt-text: #222222;
   --crt-border: #dddddd;
 }
+
+.scroll-to-top-arrow {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  background-color: var(--crt-blue); /* Example background color */
+  color: white;
+  padding: 10px;
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}

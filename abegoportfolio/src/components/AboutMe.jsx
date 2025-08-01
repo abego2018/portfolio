@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Container, Box, Grid, Typography, Button } from "@mui/material";
 import AboutMeNavBox from "./AboutMeNavBox";
+import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 
 const aboutItems = [
   {
@@ -86,7 +87,16 @@ function AboutMe() {
               setSelectedKey={setSelectedKey}
               items={aboutItems}
             />
-            <Button>Download Resume</Button>
+            <Button
+              sx={{
+                backgroundColor: "var(--crt-green)",
+                borderRadius: "25px",
+                color: "white",
+              }}
+              startIcon={<DownloadOutlinedIcon />}
+            >
+              Resume
+            </Button>
           </Box>
         </Grid>
       </Grid>

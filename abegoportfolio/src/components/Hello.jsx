@@ -23,7 +23,15 @@ function Hello() {
             <h2>I am Abego</h2>
             <p>Abraham Gonzalez</p>
             <p>Jr. Full-stack developer</p>
-            <Button>Hire Me</Button>
+            <Button
+              sx={{
+                backgroundColor: "var(--crt-red)",
+                borderRadius: "25px",
+                color: "white",
+              }}
+            >
+              Hire Me
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6}>

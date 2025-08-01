@@ -6,18 +6,21 @@ import AboutMeNavBox from "./AboutMeNavBox";
 const aboutItems = [
   {
     key: "life",
-    description: "This is some stuff about my life",
-    image: "https://placehold.co/400x400?text=Life",
+    description:
+      "Outside of development, I am a father of three, an artist, in several mediums, and a general lover of art and music.   (Link to art stuff)",
+    image: "https://placehold.co/300x300?text=Life",
   },
   {
     key: "education",
-    description: "This is the education stuff I've learned",
-    image: "https://placehold.co/400x400?text=Education",
+    description:
+      "I have gone through the Long Beach 18-week developer bootcamp as well as classes through, freeCodeCamp.com, Udemy, LinkedIn and Microsoft Learning",
+    image: "https://placehold.co/300x300?text=Education",
   },
   {
     key: "experience",
-    description: "This is some of the experience I've had",
-    image: "https://placehold.co/400x400?text=Experience",
+    description:
+      "I am familiar with the following languages and libraries: HTML5, CSS5, JS, React, Material UI, Bootstrap, Python, SQLite",
+    image: "https://placehold.co/300x300?text=Experience",
   },
 ];
 
@@ -35,7 +38,7 @@ function AboutMe() {
             sx={{
               p: 2,
               border: "1px solid grey",
-              minHeight: "300px",
+              minHeight: "400px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -65,7 +68,15 @@ function AboutMe() {
 
         {/* Right: Nav + Description */}
         <Grid item xs={12} sm={6}>
-          <Box sx={{ p: 2, border: "1px solid grey", borderRadius: 2 }}>
+          <Box
+            sx={{
+              p: 2,
+              border: "1px solid grey",
+              borderRadius: 2,
+              minHeight: "400px",
+              maxWidth: "400px",
+            }}
+          >
             <AboutMeNavBox
               selectedKey={selectedKey}
               setSelectedKey={setSelectedKey}

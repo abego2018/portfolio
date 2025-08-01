@@ -13,7 +13,7 @@ function Home() {
       style={{ height: "100vh" }}
     >
       {/* Welcome */}
-      <Grid id="welcome" item xs={12} sx={{ minHeight: "300px" }}>
+      <Grid id="welcome" item xs={12}>
         <Paper style={{ padding: 20 }}>
           <Hello />
         </Paper>

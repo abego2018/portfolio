@@ -3,9 +3,15 @@ import react from "react";
 
 function Portfolio() {
   return (
-    <Container>
-      <Box>
-        <Typography variant="h6">Portfolio</Typography>
+    <Container sx={{ height: "60vh" }}>
+      <Box
+        sx={{
+          height: "100%",
+          display: "flex",
+          justifyContent: "center", // horizontal center
+        }}
+      >
+        <Typography variant="subtitle2">Portfolio</Typography>
       </Box>
     </Container>
   );

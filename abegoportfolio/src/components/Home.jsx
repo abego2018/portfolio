@@ -3,6 +3,7 @@ import { Grid, Paper, Box } from "@mui/material";
 import Hello from "./Hello";
 import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
+import Contact from "./Contact";
 
 function Home() {
   return (
@@ -22,22 +23,29 @@ function Home() {
       </Grid>
 
       {/* About Me */}
-      <Grid item xs={12} style={{ width: "100%", maxWidth: 800 }}>
+      <Grid id="aboutme" item xs={12} style={{ width: "100%", maxWidth: 800 }}>
         <Paper style={{ padding: 20 }}>
           <AboutMe />
         </Paper>
       </Grid>
 
-      {/* Skills */}
-      <Grid item xs={12} style={{ width: "100%", maxWidth: 800 }}>
+      {/* Portfolio */}
+      <Grid
+        id="portfolio"
+        item
+        xs={12}
+        style={{ width: "100%", maxWidth: 800 }}
+      >
         <Paper style={{ padding: 20 }}>
           <Portfolio />
         </Paper>
       </Grid>
 
-      {/* Portfolio */}
-      <Grid item xs={12} style={{ width: "100%", maxWidth: 800 }}>
-        <Paper style={{ padding: 20 }}>TODO create Portfolio section</Paper>
+      {/* Contact */}
+      <Grid id="contact" item xs={12} style={{ width: "100%", maxWidth: 800 }}>
+        <Paper style={{ padding: 20 }}>
+          <Contact />
+        </Paper>
       </Grid>
     </Grid>
   );

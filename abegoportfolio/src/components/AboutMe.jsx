@@ -62,6 +62,7 @@ function AboutMe() {
                 }}
               />
             ) : (
+              //TODO add a default image instead of this message
               <Typography color="text.secondary">
                 Select a tab to see an image
               </Typography>

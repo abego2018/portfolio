@@ -26,7 +26,7 @@ function Header() {
     padding: "4px 12px",
     borderRadius: "50px",
     backgroundColor: cycleColors[colorIndex],
-    color: "#333333", // optional contrast
+    color: "#333333",
     transition: "background-color 0.3s",
   });
 

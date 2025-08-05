@@ -4,6 +4,7 @@ import Hello from "./Hello";
 import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import AboutPage from "./AboutPage";
 import ScrollToTopArrow from "./ScrollToTopArrow";
 
 function Home() {
@@ -68,6 +69,18 @@ function Home() {
         >
           <Paper style={{ padding: 20 }}>
             <Portfolio />
+          </Paper>
+        </Grid>
+
+        {/* AboutthisPage*/}
+        <Grid
+          id="portfolio"
+          item
+          xs={12}
+          style={{ width: "100%", maxWidth: 800 }}
+        >
+          <Paper style={{ padding: 20 }}>
+            <AboutPage />
           </Paper>
         </Grid>
 

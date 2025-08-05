@@ -19,7 +19,7 @@ function Hello() {
               minHeight: "300px",
             }}
           >
-            <p>Hello</p>
+            <p>Hello,</p>
             <h2>I am Abego</h2>
             <p>Abraham Gonzalez</p>
             <p>Jr. Full-stack developer</p>
@@ -27,7 +27,7 @@ function Hello() {
               sx={{
                 backgroundColor: "var(--crt-red)",
                 borderRadius: "25px",
-                color: "white",
+                color: "#333333",
               }}
             >
               Hire Me

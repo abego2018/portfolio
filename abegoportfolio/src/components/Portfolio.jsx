@@ -1,9 +1,25 @@
-import { Container, Box, Typography } from "@mui/material";
+import {
+  Container,
+  Box,
+  Typography,
+  Grid,
+  Paper,
+  ListItem,
+} from "@mui/material";
 import react from "react";
+import { styled } from "@mui/material/styles";
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+}));
 
 function Portfolio() {
   return (
-    <Container sx={{ height: "60vh" }}>
+    <Container>
       <Box
         sx={{
           height: "100%",
@@ -13,6 +29,20 @@ function Portfolio() {
       >
         <Typography variant="subtitle2">Portfolio</Typography>
       </Box>
+      <Grid container spacing={2}>
+        <Grid item xs={3}>
+          <Item>PortfolioPage</Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>EcommercePage</Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>OnlineArtGallery</Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>Other Project</Item>
+        </Grid>
+      </Grid>
     </Container>
   );
 }

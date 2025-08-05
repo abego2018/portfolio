@@ -91,7 +91,7 @@ function AboutMe() {
               sx={{
                 backgroundColor: "var(--crt-green)",
                 borderRadius: "25px",
-                color: "white",
+                color: "#333333",
               }}
               startIcon={<DownloadOutlinedIcon />}
             >

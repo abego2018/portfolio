@@ -5,6 +5,10 @@ import {
   Typography,
   Button,
   TextField,
+  Card,
+  CardHeader,
+  CardContent,
+  Link,
 } from "@mui/material";
 import React, { useState } from "react";
 function Contact() {
@@ -87,7 +91,7 @@ function Contact() {
           </Button>
         </Box>
         {/* Info Box */}
-        <Box
+        {/*<Box
           sx={{
             flex: 1,
             p: 2,
@@ -103,7 +107,50 @@ function Contact() {
           <Typography>Boise ID 83709</Typography>
           <Typography>Email: abraham.gm08@gmail.com</Typography>
           <Typography>Jr. Full-stack Developer</Typography>
-        </Box>
+        </Box> */}
+        <Card
+          sx={{
+            flex: 1,
+            p: 2,
+            border: "1px solid grey",
+            borderRadius: 2,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <CardHeader
+            title="Abraham Gonzalez"
+            subheader="Jr Full-Stack Developer"
+          />
+          <CardContent>
+            <Typography variant="body2">
+              Email: abraham.gm08@gmail.com
+            </Typography>
+            <Typography variant="body2">Phone: 424-381-8795</Typography>
+            <Typography variant="body2">
+              GitHub:{" "}
+              <Link
+                href="https://github.com/abego2018"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/abego2018
+              </Link>
+            </Typography>
+            <Typography variant="body2">
+              LinkedIn:
+              <Link
+                href="https://github.com/abego2018"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/abraham-gonzalez-22b161b5
+              </Link>
+            </Typography>
+            <Typography></Typography>
+          </CardContent>
+        </Card>
       </Box>
     </Container>
   );

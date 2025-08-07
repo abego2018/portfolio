@@ -96,8 +96,6 @@ function Header() {
             <FaGithub />
           </ListItemIcon>
         </ListItem>
-
-        <ListItem sx={{ width: "auto", padding: 0 }}>Link</ListItem>
       </List>
     </Box>
   );

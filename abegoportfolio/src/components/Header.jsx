@@ -12,6 +12,7 @@ import {
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Logo from "../assets/images/Logo.png";
 import "./styles.css";
+import { FaDiscord, FaGithub } from "react-icons/fa";
 
 const cycleColors = ["#ff667a", "#66ff99", "#66d9ff"];
 function Header() {
@@ -83,7 +84,19 @@ function Header() {
             <LinkedInIcon />
           </ListItemIcon>
         </ListItem>
-        <ListItem sx={{ width: "auto", padding: 0 }}>Link</ListItem>
+        <ListItem
+          button
+          component="a"
+          href="https://github.com/abego2018"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ width: "auto", padding: 0 }}
+        >
+          <ListItemIcon>
+            <FaGithub />
+          </ListItemIcon>
+        </ListItem>
+
         <ListItem sx={{ width: "auto", padding: 0 }}>Link</ListItem>
       </List>
     </Box>
